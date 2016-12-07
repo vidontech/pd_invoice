@@ -30,7 +30,7 @@ public class Main {
 	public Main() {
 		initialize();
 	}
-	//test
+	//test alabala
 	/**
 	 * Initialize the contents of the frame.
 	 */
