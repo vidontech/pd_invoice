@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 
 public class Main {
 
-	private JFrame frame;
+	private JFrame frmPdInvoice;
 
 	/**
 	 * Launch the application.
@@ -16,7 +16,7 @@ public class Main {
 			public void run() {
 				try {
 					Main window = new Main();
-					window.frame.setVisible(true);
+					window.frmPdInvoice.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -35,14 +35,15 @@ public class Main {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
+		frmPdInvoice = new JFrame();
+		frmPdInvoice.setTitle("PD Invoice");
+		frmPdInvoice.setBounds(100, 100, 450, 300);
+		frmPdInvoice.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmPdInvoice.getContentPane().setLayout(null);
 		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		tabbedPane.setBounds(0, 0, 434, 261);
-		frame.getContentPane().add(tabbedPane);
+		frmPdInvoice.getContentPane().add(tabbedPane);
 		
 		JPanel panel = new JPanel();
 		tabbedPane.addTab("\u041D\u043E\u0432\u0430", null, panel, null);
