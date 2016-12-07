@@ -34,6 +34,7 @@ public class Main {
 	/**
 	 * Initialize the contents of the frame.
 	 */
+	//test
 	private void initialize() {
 		frmPdInvoice = new JFrame();
 		frmPdInvoice.setTitle("PD Invoice");
