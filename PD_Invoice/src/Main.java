@@ -1,8 +1,10 @@
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JTabbedPane;
+import javax.swing.JPanel;
 
-public class Test {
+public class Main {
 
 	private JFrame frame;
 
@@ -13,7 +15,7 @@ public class Test {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Test window = new Test();
+					Main window = new Main();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -25,7 +27,7 @@ public class Test {
 	/**
 	 * Create the application.
 	 */
-	public Test() {
+	public Main() {
 		initialize();
 	}
 
@@ -36,6 +38,16 @@ public class Test {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+		tabbedPane.setBounds(0, 0, 434, 261);
+		frame.getContentPane().add(tabbedPane);
+		
+		JPanel panel = new JPanel();
+		tabbedPane.addTab("\u041D\u043E\u0432\u0430", null, panel, null);
+		
+		JPanel panel_1 = new JPanel();
+		tabbedPane.addTab("\u0421\u043F\u0440\u0430\u0432\u043A\u0438", null, panel_1, null);
 	}
-
 }
