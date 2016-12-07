@@ -30,11 +30,10 @@ public class Main {
 	public Main() {
 		initialize();
 	}
-	//test alabala
+
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	//test2
 	private void initialize() {
 		frmPdInvoice = new JFrame();
 		frmPdInvoice.setTitle("PD Invoice");
