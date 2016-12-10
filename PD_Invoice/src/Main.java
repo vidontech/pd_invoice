@@ -25,15 +25,15 @@ public class Main {
 	}
 
 	/**
-	 * Create the application.
+	 * Create the application. //testtestetete
 	 */
 	public Main() {
 		initialize();
 	}
-	//bla-bla-bla
 	/**
 	 * Initialize the contents of the frame.
 	 */
+
 
 	private void initialize() {
 		frmPdInvoice = new JFrame();
